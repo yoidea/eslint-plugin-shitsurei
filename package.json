@@ -1,0 +1,14 @@
+{
+  "name": "eslint-plugin-shitsurei",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.0.0",
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "lint": "eslint sample.js --config eslintrc.json --rulesdir rules",
+    "test": "mocha tests/*.js"
+  }
+}
