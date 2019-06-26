@@ -1,5 +1,6 @@
 const a = 0;
 const b = 0;
+const c = [1, 2, 3];
 
 // great-var
 if (b === a) {
@@ -18,10 +19,8 @@ if (a === a) {
   console.log();
 }
 
-// no-for-test
-for (var i = 0; i < 10; i++) {
-  console.log();
-}
+// koukai
+const d = c.map(v => v * v);
 
 // no-no-return
 function test() {

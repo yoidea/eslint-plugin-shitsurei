@@ -1,6 +1,8 @@
 "use strict";
 
 module.exports = context => {
+  const message =
+    "戻り値の無い関数は虚無を連想させ大変縁起が悪く使うべきではありません。";
   return {
     FunctionDeclaration: node => {
       const ret = node.body.body.find(e => {
@@ -9,7 +11,7 @@ module.exports = context => {
       if (typeof ret === "undefined") {
         context.report({
           node,
-          message: "戻り値の無い関数は大変縁起が悪く使うべきではありません。"
+          message: message
         });
       }
     },
@@ -24,7 +26,7 @@ module.exports = context => {
       if (typeof ret === "undefined") {
         context.report({
           node,
-          message: "戻り値の無い関数は大変縁起が悪く使うべきではありません。"
+          message: message
         });
       }
     }

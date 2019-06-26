@@ -15,7 +15,7 @@ const invalid = [
     code: "if (b === a) { console.log(); };",
     errors: [
       {
-        message: "文字コードの大きい変数を下座に配置するのは失礼です。",
+        message: "目上の変数は比較演算子の右側に配置すべきです。",
         type: "BinaryExpression"
       }
     ]

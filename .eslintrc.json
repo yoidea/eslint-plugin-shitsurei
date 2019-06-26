@@ -6,9 +6,9 @@
   },
   "rules": {
     "great-var": 2,
-    "no-break": 2,
+    "no-break": 1,
     "no-else": 2,
-    "no-for-test": 2,
-    "no-no-return": 2
+    "koukai": 1,
+    "no-no-return": 1
   }
 }

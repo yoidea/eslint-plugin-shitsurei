@@ -15,7 +15,8 @@ const invalid = [
     code: "function test() { console.log(); };",
     errors: [
       {
-        message: "戻り値の無い関数は大変縁起が悪く使うべきではありません。",
+        message:
+          "戻り値の無い関数は虚無を連想させ大変縁起が悪く使うべきではありません。",
         type: "FunctionDeclaration"
       }
     ]
