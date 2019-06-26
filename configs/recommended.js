@@ -1,10 +1,10 @@
 module.exports = {
   plugins: ["shitsurei"],
   rules: {
-    "great-var": 2,
-    "no-break": 2,
-    "no-else": 2,
-    "no-for-test": 2,
-    "no-no-return": 2
+    "shitsurei/great-var": 2,
+    "shitsurei/no-break": 2,
+    "shitsurei/no-else": 2,
+    "shitsurei/no-for-test": 2,
+    "shitsurei/no-no-return": 2
   }
 };
