@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-shitsurei",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
   "license": "MIT",
   "author": "@yoidea",
@@ -11,16 +11,16 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
-    "eslint": "^6.0.0",
+    "eslint": "^5.16.0",
     "mocha": "^6.1.4",
     "prettier": "^1.18.2"
   },
   "peerDependencies": {
-    "eslint": "^6.0.0"
+    "eslint": "^5.16.0"
   },
   "scripts": {
     "format": "prettier --write ./**/*.js",
-    "lint": "eslint . --rulesdir rules",
+    "lint": "eslint sample.js --rulesdir rules",
     "test": "mocha tests/*.js"
   }
 }
