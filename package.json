@@ -1,7 +1,8 @@
 {
   "name": "eslint-plugin-shitsurei",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "そのコード、失礼かもしれません。",
+  "keywords": ["eslint", "eslint-plugin", "eslint-config", "manner"],
   "main": "index.js",
   "license": "MIT",
   "author": "@yoidea",
