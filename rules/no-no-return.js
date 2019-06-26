@@ -6,7 +6,7 @@ module.exports = context => {
       const ret = node.body.body.find(e => {
         return e.type === "ReturnStatement";
       });
-      if (ret === undefined) {
+      if (typeof ret === "undefined") {
         context.report({
           node,
           message: "戻り値の無い関数は大変縁起が悪く使うべきではありません。"
@@ -14,10 +14,14 @@ module.exports = context => {
       }
     },
     ArrowFunctionExpression: node => {
-      const ret = node.body.body.find(e => {
+      const body = node.body.body;
+      if (typeof body === "undefined") {
+        return;
+      }
+      const ret = body.find(e => {
         return e.type === "ReturnStatement";
       });
-      if (ret === undefined) {
+      if (typeof ret === "undefined") {
         context.report({
           node,
           message: "戻り値の無い関数は大変縁起が悪く使うべきではありません。"
